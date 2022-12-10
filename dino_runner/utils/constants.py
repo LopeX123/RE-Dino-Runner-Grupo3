@@ -65,10 +65,19 @@ BIRD = [
     pygame.image.load(os.path.join(IMG_DIR, "Bird/Bird2.png")),
     pygame.image.load(os.path.join(IMG_DIR, "Bird/Bird2.png"))
 ]
+POWER_UPS=[
+    pygame.image.load(os.path.join(IMG_DIR, 'Other/PowerUpUp.png')),
+    pygame.image.load(os.path.join(IMG_DIR, 'Other/PowerUpShield.png')),
+    pygame.image.load(os.path.join(IMG_DIR, 'Other/PowerUpFire.png'))    
+]
+
+STATE_MAIN = pygame.image.load(os.path.join(IMG_DIR, 'States/state_Main.png'))
+STATE_GAMEOVER=pygame.image.load(os.path.join(IMG_DIR, 'States/state_GameOver.png'))
 
 CLOUD = pygame.image.load(os.path.join(IMG_DIR, 'Other/Cloud.png'))
 SHIELD = pygame.image.load(os.path.join(IMG_DIR, 'Other/shield.png'))
 HAMMER = pygame.image.load(os.path.join(IMG_DIR, 'Other/hammer.png'))
+FIRE = pygame.image.load(os.path.join(IMG_DIR, 'Other/Fire.png'))
 
 BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/Track.png'))
 
@@ -76,3 +85,5 @@ HEART = pygame.image.load(os.path.join(IMG_DIR, 'Other/SmallHeart.png'))
 
 DEFAULT_TYPE = "default"
 FONT_STYLE = "freesansbold.ttf"
+
+

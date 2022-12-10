@@ -1,7 +1,5 @@
-import random
 from dino_runner.components.obstacles.obstacle import Obstacle
 from dino_runner.utils.constants import BIRD, SCREEN_HEIGHT, SCREEN_WIDTH
-
 
 class Bird (Obstacle):
     def __init__(self, images):
@@ -12,16 +10,16 @@ class Bird (Obstacle):
         self.rect.x=SCREEN_WIDTH+600
     
     def update(self,game_speed):
-        if(not self.dead):
+        if(not self.eliminate): #movimiento recto
             super().update(game_speed)
         else:
-            if(self.rect.y<380):
+            if(self.rect.y<380): #movimiento en caida
                 self.rect.y += 10 
                 self.rect.x -= 10 
             else:
                 self.rect.x=-100             
         
-        if self.step_index > 5:
+        if self.step_index > 5: # aleteo
                 self.type=0
         else:
             self.type=1
